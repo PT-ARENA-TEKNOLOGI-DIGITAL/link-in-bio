@@ -1,88 +1,104 @@
 // @ts-check
-import profileImage from './src/images/profilepic.png?url';
-import backgroundImage from './src/images/backgrounds/watercolor-blue-green.png?url';
-import productImage from './src/images/product1.png?url';
+import profileImage from "./src/images/profilepic.png?url";
+import backgroundImage from "./src/images/backgrounds/watercolor-blue-green.png?url";
+import productImage from "./src/images/product1.png?url";
 
 /** @type {import('./src/types').SiteConfig} */
 const config = {
   user: {
-    name: "Cory Trimm",
-    bio: "Serial builder of things - software, hardware, and everything in between. This is my little link in bio project built with Astro and Tailwind.",
+    name: "ItemGame",
+    bio: "Top up game cepat, murah, dan terpercaya. Tersedia Mobile Legends, Free Fire, PUBG, Genshin, dan lainnya.",
     profileImage: profileImage,
   },
   background: {
-    color: "#f0f0f0",
+    color: "#f5faff",
     image: backgroundImage,
   },
   socialLinks: [
     {
+      platform: "facebook",
+      url: "https://facebook.com/itemgame",
+      icon: "facebook",
+    },
+    {
+      platform: "x",
+      url: "https://x.com/itemgame",
+      icon: "x-twitter", // bisa juga "twitter" tergantung icon support-nya
+    },
+    {
       platform: "instagram",
-      url: "https://instagram.com/journey.unknown",
-      icon: "camera-retro",
+      url: "https://instagram.com/itemgame",
+      icon: "instagram",
     },
     {
-      platform: "threads",
-      url: "https://threads.net/@journey.unknown",
-      icon: "threads",
-    },
-    {
-      platform: "linkedin",
-      url: "https://linkedin.com/in/cory-trimm",
-      icon: "linkedin",
-    },
-    {
-      platform: "spotify",
-      url: "https://spotify.com",
-      icon: "spotify",
-    },
-    {
-      platform: "snapchat",
-      url: "https://snapchat.com",
-      icon: "snapchaat",
+      platform: "youtube",
+      url: "https://youtube.com/@itemgame",
+      icon: "youtube",
     },
     {
       platform: "tiktok",
-      url: "https://tiktok.com",
+      url: "https://tiktok.com/@itemgame",
       icon: "tiktok",
     },
-    // Add more social links as needed
-    // Search for icons here - https://fontawesome.com/search
-  ],
-  links: [
     {
-      title: "Use This Template",
-      url: "https://github.com/ctrimm/astro-link-in-bio-theme",
-      icon: "code",
+      platform: "whatsapp",
+      url: "https://wa.me/6281314569839",
+      icon: "whatsapp",
     },
     {
-      title: "My Personal Web Site",
-      url: "https://corytrimm.com",
+      platform: "globe",
+      url: "https://itemgame.com",
+      icon: "globe",
+    },
+  ],
+
+  links: [
+    {
+      title: "Website Resmi",
+      url: "https://itemgame.com",
       icon: "globe",
     },
     {
-      title: "Join My YouTube Channel",
-      url: "https://youtube.com/c/corytrimm",
-      icon: "play",
+      title: "Grup Komunitas WA",
+      url: "https://chat.whatsapp.com/FI0iNdxFm4MIeMAs6L7ggq",
+      icon: "users",
     },
-    // Add more links as needed
+    {
+      title: "Hubungi via WhatsApp",
+      url: "https://wa.me/6281314569839",
+      icon: "whatsapp",
+    },
+    {
+      title: "Follow Instagram",
+      url: "https://instagram.com/itemgame",
+      icon: "instagram",
+    }
   ],
+
   products: [
     {
-      title: "Digital Product",
-      description: "Description of your digital product",
-      url: "https://inshortpod.com",
-      price: 19.99,
-      includePriceOnSite: true,
+      title: "Top Up Mobile Legends",
+      description: "Diamond murah dan instan. Masukkan ID & Zone.",
+      url: "https://itemgame.com/id-id/mobile-legends",
+      price: 9999,
+      includePriceOnSite: false,
       image: productImage,
     },
-    // Add more products as needed
+    {
+      title: "Top Up Free Fire",
+      description: "Langsung masuk ke akun kamu, harga terjangkau.",
+      url: "https://itemgame.com/id-id/free-fire",
+      price: 1000,
+      includePriceOnSite: false,
+      image: productImage,
+    },
   ],
 };
 
 export const analytics = {
   posthog: {
-    enableTracking: false
-  }
+    enableTracking: false,
+  },
 };
 
 export default config;
